@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my jquery</title>
+</head>
+<body>
+  <script src="./jquery.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
+</body>
+<script>
+console.log($());
+
+var src = {}
+var opt = {name: '白宇', fan: {name: '小宇宙'}}
+var opt2 = {age: 29, fan: {age: 16}, name: undefined}
+$.fn.extend(true, src, opt, opt2)
+console.log(src);
+console.log($);
+console.log($.prototype);
+
+var a = ['sd']
+var b = ['baiyu']
+console.log($.extend(a, opt));
+
+console.log(a);
+
+</script>
+</html>
